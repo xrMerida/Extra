@@ -1,0 +1,4 @@
+utils/**/build/
+utils/**/*.egg-info/
+utils/**/__pycache__/
+utils/**/.venv/

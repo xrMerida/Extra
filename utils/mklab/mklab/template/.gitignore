@@ -1,0 +1,12 @@
+# Build artifacts
+build/
+
+# IDE / editor caches
+.cache/
+
+# CMake generated files
+compile_commands.json
+
+# OS files
+.DS_Store
+Thumbs.db

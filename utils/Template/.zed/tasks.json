@@ -1,0 +1,17 @@
+[
+  {
+    "label": "cmake configure",
+    "command": "cmake -B build -S .",
+    "tags": ["cmake", "configure"],
+  },
+  {
+    "label": "cmake build",
+    "command": "cmake --build build",
+    "tags": ["cmake", "build"],
+  },
+  {
+    "label": "cmake clean",
+    "command": "cmake --build build --target clean",
+    "tags": ["cmake", "clean"],
+  },
+]
