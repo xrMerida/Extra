@@ -2,7 +2,7 @@
   {
     "label": "Debug native binary",
     "build": "cmake build",
-    "program": "$ZED_WORKTREE_ROOT/build/app",
+    "program": "$ZED_WORKTREE_ROOT/build/__L_PROJ_NAME",
     "request": "launch",
     "console": "integratedTerminal",
     "adapter": "CodeLLDB",
