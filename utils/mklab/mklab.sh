@@ -15,7 +15,7 @@ fi
 
 DEST="$1"
 NAME="${2:-$DEST}"
-NLOWER="$(echo "$NAME" | tr '[:upper:]' '[:lower:]')"
+LNAME="$(echo "$NAME" | tr '[:upper:]' '[:lower:]')"
 
 if [[ -d "$DEST" ]]; then
   echo "Error: destination '$DEST' already exists" >&2
@@ -25,9 +25,9 @@ fi
 # Project creation --------
 cp -r "$TEMPLATE" "$DEST"
 
-find "$DEST" -type f -exec sed -i "s/__M_PROJ_NAME/$NAME/g" {} +
-find "$DEST" -type f -exec sed -i "s/__L_PROJ_NAME/$NLOWER/g" {} +
+find "$DEST" -type f -exec sed -i "s/__NAME/$NAME/g" {} +
+find "$DEST" -type f -exec sed -i "s/__LNAME/$LNAME/g" {} +
 
-mkdir -p "$DEST/include/$NLOWER"
+mkdir -p "$DEST/include/$LNAME"
 
 echo "Created project at './$DEST' with name '$NAME'"
