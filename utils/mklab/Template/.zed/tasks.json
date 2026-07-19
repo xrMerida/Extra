@@ -5,9 +5,19 @@
     "tags": ["cmake", "configure"],
   },
   {
+    "label": "cmake configure release",
+    "command": "cmake -B build -S . -DCMAKE_BUILD_TYPE=Release",
+    "tags": ["cmake", "configure", "release"],
+  },
+  {
     "label": "cmake build",
     "command": "cmake --build build",
     "tags": ["cmake", "build"],
+  },
+  {
+    "label": "cmake build release",
+    "command": "cmake --build build --config Release",
+    "tags": ["cmake", "build", "release"],
   },
   {
     "label": "cmake clean",
